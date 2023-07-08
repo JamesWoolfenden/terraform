@@ -3,8 +3,8 @@ package terraform
 import (
 	"log"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/plans"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/plans"
 )
 
 // reducePlan takes a planned resource instance change as might be produced by

@@ -8,8 +8,8 @@ import (
 
 	"cloud.google.com/go/storage"
 	multierror "github.com/hashicorp/go-multierror"
-	"github.com/hashicorp/terraform/states/remote"
-	"github.com/hashicorp/terraform/states/statemgr"
+	"github.com/jameswoolfenden/terraform/states/remote"
+	"github.com/jameswoolfenden/terraform/states/statemgr"
 	"golang.org/x/net/context"
 )
 

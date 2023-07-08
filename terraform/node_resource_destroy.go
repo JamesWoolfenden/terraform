@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/hashicorp/terraform/plans"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/plans"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/configs"
-	"github.com/hashicorp/terraform/states"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/configs"
+	"github.com/jameswoolfenden/terraform/states"
 )
 
 // NodeDestroyResourceInstance represents a resource instance that is to be

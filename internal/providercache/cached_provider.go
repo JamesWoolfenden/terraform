@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/internal/getproviders"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/internal/getproviders"
 )
 
 // CachedProvider represents a provider package in a cache directory.

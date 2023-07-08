@@ -9,7 +9,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/hashicorp/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/addrs"
 )
 
 // MockSource is an in-memory-only, statically-configured source intended for

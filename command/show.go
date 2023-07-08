@@ -5,17 +5,17 @@ import (
 	"os"
 	"strings"
 
-	"github.com/hashicorp/terraform/backend"
-	"github.com/hashicorp/terraform/command/arguments"
-	"github.com/hashicorp/terraform/command/format"
-	"github.com/hashicorp/terraform/command/jsonplan"
-	"github.com/hashicorp/terraform/command/jsonstate"
-	"github.com/hashicorp/terraform/command/views"
-	"github.com/hashicorp/terraform/plans"
-	"github.com/hashicorp/terraform/plans/planfile"
-	"github.com/hashicorp/terraform/states/statefile"
-	"github.com/hashicorp/terraform/states/statemgr"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/backend"
+	"github.com/jameswoolfenden/terraform/command/arguments"
+	"github.com/jameswoolfenden/terraform/command/format"
+	"github.com/jameswoolfenden/terraform/command/jsonplan"
+	"github.com/jameswoolfenden/terraform/command/jsonstate"
+	"github.com/jameswoolfenden/terraform/command/views"
+	"github.com/jameswoolfenden/terraform/plans"
+	"github.com/jameswoolfenden/terraform/plans/planfile"
+	"github.com/jameswoolfenden/terraform/states/statefile"
+	"github.com/jameswoolfenden/terraform/states/statemgr"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 // ShowCommand is a Command implementation that reads and outputs the

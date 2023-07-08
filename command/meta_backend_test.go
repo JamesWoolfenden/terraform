@@ -8,20 +8,20 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/backend"
-	"github.com/hashicorp/terraform/configs"
-	"github.com/hashicorp/terraform/internal/copy"
-	"github.com/hashicorp/terraform/plans"
-	"github.com/hashicorp/terraform/states"
-	"github.com/hashicorp/terraform/states/statefile"
-	"github.com/hashicorp/terraform/states/statemgr"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/backend"
+	"github.com/jameswoolfenden/terraform/configs"
+	"github.com/jameswoolfenden/terraform/internal/copy"
+	"github.com/jameswoolfenden/terraform/plans"
+	"github.com/jameswoolfenden/terraform/states"
+	"github.com/jameswoolfenden/terraform/states/statefile"
+	"github.com/jameswoolfenden/terraform/states/statemgr"
 	"github.com/mitchellh/cli"
 	"github.com/zclconf/go-cty/cty"
 
-	backendInit "github.com/hashicorp/terraform/backend/init"
-	backendLocal "github.com/hashicorp/terraform/backend/local"
-	backendInmem "github.com/hashicorp/terraform/backend/remote-state/inmem"
+	backendInit "github.com/jameswoolfenden/terraform/backend/init"
+	backendLocal "github.com/jameswoolfenden/terraform/backend/local"
+	backendInmem "github.com/jameswoolfenden/terraform/backend/remote-state/inmem"
 )
 
 // Test empty directory with no config/state creates a local state.

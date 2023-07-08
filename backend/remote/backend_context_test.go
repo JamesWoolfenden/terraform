@@ -5,14 +5,14 @@ import (
 	"testing"
 
 	tfe "github.com/hashicorp/go-tfe"
-	"github.com/hashicorp/terraform/backend"
-	"github.com/hashicorp/terraform/command/arguments"
-	"github.com/hashicorp/terraform/command/clistate"
-	"github.com/hashicorp/terraform/command/views"
-	"github.com/hashicorp/terraform/configs"
-	"github.com/hashicorp/terraform/internal/initwd"
-	"github.com/hashicorp/terraform/internal/terminal"
-	"github.com/hashicorp/terraform/states/statemgr"
+	"github.com/jameswoolfenden/terraform/backend"
+	"github.com/jameswoolfenden/terraform/command/arguments"
+	"github.com/jameswoolfenden/terraform/command/clistate"
+	"github.com/jameswoolfenden/terraform/command/views"
+	"github.com/jameswoolfenden/terraform/configs"
+	"github.com/jameswoolfenden/terraform/internal/initwd"
+	"github.com/jameswoolfenden/terraform/internal/terminal"
+	"github.com/jameswoolfenden/terraform/states/statemgr"
 	"github.com/zclconf/go-cty/cty"
 )
 

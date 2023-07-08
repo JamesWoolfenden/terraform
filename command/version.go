@@ -7,9 +7,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/internal/depsfile"
-	"github.com/hashicorp/terraform/internal/getproviders"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/internal/depsfile"
+	"github.com/jameswoolfenden/terraform/internal/getproviders"
 )
 
 // VersionCommand is a Command implementation prints the version.

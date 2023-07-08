@@ -7,10 +7,10 @@ import (
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/command/arguments"
-	"github.com/hashicorp/terraform/command/views"
-	"github.com/hashicorp/terraform/terraform"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/command/arguments"
+	"github.com/jameswoolfenden/terraform/command/views"
+	"github.com/jameswoolfenden/terraform/terraform"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 // ValidateCommand is a Command implementation that validates the terraform files

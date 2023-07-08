@@ -30,7 +30,7 @@ SECURITY WARNING: the %[1]q file that was created may contain
 sensitive information that must be redacted before it is safe to share 
 on the issue tracker.
 
-[1]: https://github.com/hashicorp/terraform/issues
+[1]: https://github.com/jameswoolfenden/terraform/issues
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!! TERRAFORM CRASH !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 `

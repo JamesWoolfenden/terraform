@@ -3,11 +3,11 @@ package terraform
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/configs"
-	"github.com/hashicorp/terraform/configs/configschema"
-	"github.com/hashicorp/terraform/providers"
-	"github.com/hashicorp/terraform/provisioners"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/configs"
+	"github.com/jameswoolfenden/terraform/configs/configschema"
+	"github.com/jameswoolfenden/terraform/providers"
+	"github.com/jameswoolfenden/terraform/provisioners"
 	"github.com/zclconf/go-cty/cty"
 )
 

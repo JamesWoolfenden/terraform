@@ -6,9 +6,9 @@ import (
 
 	"github.com/hashicorp/hcl"
 	hclast "github.com/hashicorp/hcl/hcl/ast"
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/internal/getproviders"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/internal/getproviders"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 // ProviderInstallation is the structure of the "provider_installation"
@@ -294,9 +294,9 @@ type ProviderInstallationMethod struct {
 // different installation location types. The concrete implementations of
 // this interface are:
 //
-//     ProviderInstallationDirect:                install from the provider's origin registry
-//     ProviderInstallationFilesystemMirror(dir): install from a local filesystem mirror
-//     ProviderInstallationNetworkMirror(host):   install from a network mirror
+//	ProviderInstallationDirect:                install from the provider's origin registry
+//	ProviderInstallationFilesystemMirror(dir): install from a local filesystem mirror
+//	ProviderInstallationNetworkMirror(host):   install from a network mirror
 type ProviderInstallationLocation interface {
 	providerInstallationLocation()
 }

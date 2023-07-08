@@ -10,8 +10,8 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/configs/configschema"
-	"github.com/hashicorp/terraform/internal/legacy/terraform"
+	"github.com/jameswoolfenden/terraform/configs/configschema"
+	"github.com/jameswoolfenden/terraform/internal/legacy/terraform"
 )
 
 func TestProvider_impl(t *testing.T) {

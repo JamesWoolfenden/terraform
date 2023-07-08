@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 // GetCommand is a Command implementation that takes a Terraform

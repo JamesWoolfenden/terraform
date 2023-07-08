@@ -6,12 +6,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/command/arguments"
-	"github.com/hashicorp/terraform/internal/terminal"
-	"github.com/hashicorp/terraform/plans"
-	"github.com/hashicorp/terraform/states"
-	"github.com/hashicorp/terraform/states/statefile"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/command/arguments"
+	"github.com/jameswoolfenden/terraform/internal/terminal"
+	"github.com/jameswoolfenden/terraform/plans"
+	"github.com/jameswoolfenden/terraform/states"
+	"github.com/jameswoolfenden/terraform/states/statefile"
 )
 
 func TestOperation_stopping(t *testing.T) {

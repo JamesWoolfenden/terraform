@@ -3,7 +3,7 @@ package views
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform/command/arguments"
+	"github.com/jameswoolfenden/terraform/command/arguments"
 )
 
 // The StateLocker view is used to display locking/unlocking status messages

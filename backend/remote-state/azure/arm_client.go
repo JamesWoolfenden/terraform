@@ -16,7 +16,7 @@ import (
 	"github.com/Azure/go-autorest/autorest/azure"
 	"github.com/hashicorp/go-azure-helpers/authentication"
 	"github.com/hashicorp/go-azure-helpers/sender"
-	"github.com/hashicorp/terraform/httpclient"
+	"github.com/jameswoolfenden/terraform/httpclient"
 )
 
 type ArmClient struct {
@@ -122,7 +122,7 @@ func buildArmClient(ctx context.Context, config BackendConfig) (*ArmClient, erro
 
 func buildArmEnvironment(config BackendConfig) (*azure.Environment, error) {
 	// TODO: can we remove this?
-	// https://github.com/hashicorp/terraform/issues/27156
+	// https://github.com/jameswoolfenden/terraform/issues/27156
 	if config.CustomResourceManagerEndpoint != "" {
 		log.Printf("[DEBUG] Loading Environment from Endpoint %q", config.CustomResourceManagerEndpoint)
 		return authentication.LoadEnvironmentFromUrl(config.CustomResourceManagerEndpoint)

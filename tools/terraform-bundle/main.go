@@ -12,7 +12,7 @@
 // release archives. This tool by default produces files with the following
 // naming scheme:
 //
-//    terraform_0.10.0-bundle2017070302_linux_amd64.zip
+//	terraform_0.10.0-bundle2017070302_linux_amd64.zip
 //
 // The user is free to rename these files, since the archive filename has
 // no significance to Terraform itself and the generated pseudo-version number
@@ -37,7 +37,7 @@ import (
 	"log"
 	"os"
 
-	tfversion "github.com/hashicorp/terraform/version"
+	tfversion "github.com/jameswoolfenden/terraform/version"
 	"github.com/mitchellh/cli"
 )
 

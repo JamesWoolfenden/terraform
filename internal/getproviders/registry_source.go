@@ -7,7 +7,7 @@ import (
 	svchost "github.com/hashicorp/terraform-svchost"
 	disco "github.com/hashicorp/terraform-svchost/disco"
 
-	"github.com/hashicorp/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/addrs"
 )
 
 // RegistrySource is a Source that knows how to find and install providers from

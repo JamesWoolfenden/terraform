@@ -47,14 +47,14 @@ panic: runtime error: invalid memory address or nil pointer dereference
 goroutine 123 [running]:
 panic(0xabc100, 0xd93000a0a0)
 	/opt/go/src/runtime/panic.go:464 +0x3e6
-github.com/hashicorp/terraform/builtin/providers/aws.resourceAwsSomeResourceCreate(...)
-	/opt/gopath/src/github.com/hashicorp/terraform/builtin/providers/aws/resource_aws_some_resource.go:123 +0x123
-github.com/hashicorp/terraform/helper/schema.(*Resource).Refresh(...)
-	/opt/gopath/src/github.com/hashicorp/terraform/helper/schema/resource.go:209 +0x123
-github.com/hashicorp/terraform/helper/schema.(*Provider).Refresh(...)
-	/opt/gopath/src/github.com/hashicorp/terraform/helper/schema/provider.go:187 +0x123
-github.com/hashicorp/terraform/rpc.(*ResourceProviderServer).Refresh(...)
-	/opt/gopath/src/github.com/hashicorp/terraform/rpc/resource_provider.go:345 +0x6a
+github.com/jameswoolfenden/terraform/builtin/providers/aws.resourceAwsSomeResourceCreate(...)
+	/opt/gopath/src/github.com/jameswoolfenden/terraform/builtin/providers/aws/resource_aws_some_resource.go:123 +0x123
+github.com/jameswoolfenden/terraform/helper/schema.(*Resource).Refresh(...)
+	/opt/gopath/src/github.com/jameswoolfenden/terraform/helper/schema/resource.go:209 +0x123
+github.com/jameswoolfenden/terraform/helper/schema.(*Provider).Refresh(...)
+	/opt/gopath/src/github.com/jameswoolfenden/terraform/helper/schema/provider.go:187 +0x123
+github.com/jameswoolfenden/terraform/rpc.(*ResourceProviderServer).Refresh(...)
+	/opt/gopath/src/github.com/jameswoolfenden/terraform/rpc/resource_provider.go:345 +0x6a
 reflect.Value.call(...)
 	/opt/go/src/reflect/value.go:435 +0x120d
 reflect.Value.Call(...)
@@ -68,8 +68,8 @@ created by net/rpc.(*Server).ServeCodec
 The key part of this message is the first two lines that involve `hashicorp/terraform`. In this example:
 
 ```text
-github.com/hashicorp/terraform/builtin/providers/aws.resourceAwsSomeResourceCreate(...)
-	/opt/gopath/src/github.com/hashicorp/terraform/builtin/providers/aws/resource_aws_some_resource.go:123 +0x123
+github.com/jameswoolfenden/terraform/builtin/providers/aws.resourceAwsSomeResourceCreate(...)
+	/opt/gopath/src/github.com/jameswoolfenden/terraform/builtin/providers/aws/resource_aws_some_resource.go:123 +0x123
 ```
 
 The first line tells us that the method that failed is

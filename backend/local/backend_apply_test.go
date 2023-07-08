@@ -11,19 +11,19 @@ import (
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/backend"
-	"github.com/hashicorp/terraform/command/arguments"
-	"github.com/hashicorp/terraform/command/clistate"
-	"github.com/hashicorp/terraform/command/views"
-	"github.com/hashicorp/terraform/configs/configschema"
-	"github.com/hashicorp/terraform/internal/initwd"
-	"github.com/hashicorp/terraform/internal/terminal"
-	"github.com/hashicorp/terraform/plans"
-	"github.com/hashicorp/terraform/providers"
-	"github.com/hashicorp/terraform/states"
-	"github.com/hashicorp/terraform/states/statemgr"
-	"github.com/hashicorp/terraform/terraform"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/backend"
+	"github.com/jameswoolfenden/terraform/command/arguments"
+	"github.com/jameswoolfenden/terraform/command/clistate"
+	"github.com/jameswoolfenden/terraform/command/views"
+	"github.com/jameswoolfenden/terraform/configs/configschema"
+	"github.com/jameswoolfenden/terraform/internal/initwd"
+	"github.com/jameswoolfenden/terraform/internal/terminal"
+	"github.com/jameswoolfenden/terraform/plans"
+	"github.com/jameswoolfenden/terraform/providers"
+	"github.com/jameswoolfenden/terraform/states"
+	"github.com/jameswoolfenden/terraform/states/statemgr"
+	"github.com/jameswoolfenden/terraform/terraform"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 func TestLocal_applyBasic(t *testing.T) {

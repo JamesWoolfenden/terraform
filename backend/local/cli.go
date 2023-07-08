@@ -3,7 +3,7 @@ package local
 import (
 	"log"
 
-	"github.com/hashicorp/terraform/backend"
+	"github.com/jameswoolfenden/terraform/backend"
 )
 
 // backend.CLI impl.

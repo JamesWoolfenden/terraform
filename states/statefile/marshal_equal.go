@@ -3,7 +3,7 @@ package statefile
 import (
 	"bytes"
 
-	"github.com/hashicorp/terraform/states"
+	"github.com/jameswoolfenden/terraform/states"
 )
 
 // StatesMarshalEqual returns true if and only if the two given states have

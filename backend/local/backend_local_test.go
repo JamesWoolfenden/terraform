@@ -3,12 +3,12 @@ package local
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform/backend"
-	"github.com/hashicorp/terraform/command/arguments"
-	"github.com/hashicorp/terraform/command/clistate"
-	"github.com/hashicorp/terraform/command/views"
-	"github.com/hashicorp/terraform/internal/initwd"
-	"github.com/hashicorp/terraform/internal/terminal"
+	"github.com/jameswoolfenden/terraform/backend"
+	"github.com/jameswoolfenden/terraform/command/arguments"
+	"github.com/jameswoolfenden/terraform/command/clistate"
+	"github.com/jameswoolfenden/terraform/command/views"
+	"github.com/jameswoolfenden/terraform/internal/initwd"
+	"github.com/jameswoolfenden/terraform/internal/terminal"
 )
 
 func TestLocalContext(t *testing.T) {

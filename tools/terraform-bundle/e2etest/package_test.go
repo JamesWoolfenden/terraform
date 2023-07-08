@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform/e2e"
+	"github.com/jameswoolfenden/terraform/e2e"
 )
 
 func TestPackage_empty(t *testing.T) {

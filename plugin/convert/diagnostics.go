@@ -1,8 +1,8 @@
 package convert
 
 import (
-	proto "github.com/hashicorp/terraform/internal/tfplugin5"
-	"github.com/hashicorp/terraform/tfdiags"
+	proto "github.com/jameswoolfenden/terraform/internal/tfplugin5"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 	"github.com/zclconf/go-cty/cty"
 )
 

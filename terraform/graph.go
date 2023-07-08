@@ -4,11 +4,11 @@ import (
 	"log"
 	"strings"
 
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 
-	"github.com/hashicorp/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/addrs"
 
-	"github.com/hashicorp/terraform/dag"
+	"github.com/jameswoolfenden/terraform/dag"
 )
 
 // Graph represents the graph that Terraform uses to represent resources

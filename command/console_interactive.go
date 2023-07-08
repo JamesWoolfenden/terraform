@@ -1,3 +1,4 @@
+//go:build !solaris
 // +build !solaris
 
 // The readline library we use doesn't currently support solaris so
@@ -9,8 +10,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/hashicorp/terraform/internal/helper/wrappedreadline"
-	"github.com/hashicorp/terraform/repl"
+	"github.com/jameswoolfenden/terraform/internal/helper/wrappedreadline"
+	"github.com/jameswoolfenden/terraform/repl"
 
 	"github.com/chzyer/readline"
 	"github.com/mitchellh/cli"

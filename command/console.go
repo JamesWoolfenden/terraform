@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/backend"
-	"github.com/hashicorp/terraform/internal/helper/wrappedstreams"
-	"github.com/hashicorp/terraform/repl"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/backend"
+	"github.com/jameswoolfenden/terraform/internal/helper/wrappedstreams"
+	"github.com/jameswoolfenden/terraform/repl"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 
 	"github.com/mitchellh/cli"
 )

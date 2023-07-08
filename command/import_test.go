@@ -11,10 +11,10 @@ import (
 	"github.com/mitchellh/cli"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/configs/configschema"
-	"github.com/hashicorp/terraform/internal/copy"
-	"github.com/hashicorp/terraform/providers"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/configs/configschema"
+	"github.com/jameswoolfenden/terraform/internal/copy"
+	"github.com/jameswoolfenden/terraform/providers"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 func TestImport(t *testing.T) {
@@ -869,7 +869,7 @@ func TestImportModuleVarFile(t *testing.T) {
 //
 // The specific example has a variable "foo" which is a nested object:
 //
-//   foo = { bar = { baz = true } }
+//	foo = { bar = { baz = true } }
 //
 // This is used as foo = var.foo in the call to the child module, which then
 // uses the traversal foo.bar.baz in a local. A default value in the child

@@ -3,8 +3,8 @@ package terraform
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/states"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/states"
 )
 
 func TestNodeDataDestroyExecute(t *testing.T) {

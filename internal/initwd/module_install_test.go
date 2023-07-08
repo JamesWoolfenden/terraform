@@ -11,13 +11,13 @@ import (
 
 	"github.com/go-test/deep"
 	version "github.com/hashicorp/go-version"
-	"github.com/hashicorp/terraform/configs"
-	"github.com/hashicorp/terraform/configs/configload"
-	"github.com/hashicorp/terraform/internal/copy"
-	"github.com/hashicorp/terraform/registry"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/configs"
+	"github.com/jameswoolfenden/terraform/configs/configload"
+	"github.com/jameswoolfenden/terraform/internal/copy"
+	"github.com/jameswoolfenden/terraform/registry"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 
-	_ "github.com/hashicorp/terraform/internal/logging"
+	_ "github.com/jameswoolfenden/terraform/internal/logging"
 )
 
 func TestMain(m *testing.M) {

@@ -1,3 +1,4 @@
+//go:build ignore
 // +build ignore
 
 // This file is a helper for those doing _manual_ testing of "terraform login"
@@ -9,7 +10,7 @@
 // This is _not_ the main way to use this oauthserver package. For automated
 // test code, import it as a normal Go package instead:
 //
-//     import oauthserver "github.com/hashicorp/terraform/command/testdata/login-oauth-server"
+//     import oauthserver "github.com/jameswoolfenden/terraform/command/testdata/login-oauth-server"
 
 package main
 
@@ -19,7 +20,7 @@ import (
 	"net/http"
 	"os"
 
-	oauthserver "github.com/hashicorp/terraform/command/testdata/login-oauth-server"
+	oauthserver "github.com/jameswoolfenden/terraform/command/testdata/login-oauth-server"
 )
 
 func main() {

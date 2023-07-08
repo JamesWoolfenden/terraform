@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	_ "github.com/hashicorp/terraform/internal/logging"
+	_ "github.com/jameswoolfenden/terraform/internal/logging"
 )
 
 func TestMain(m *testing.M) {

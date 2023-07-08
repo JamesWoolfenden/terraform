@@ -15,7 +15,7 @@ to help with that process.
 The goal of this guide is to cover the most common upgrade concerns and
 issues that would benefit from more explanation and background. The exhaustive
 list of changes will always be
-[the Terraform Changelog](https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md).
+[the Terraform Changelog](https://github.com/jameswoolfenden/terraform/blob/v0.14/CHANGELOG.md).
 After reviewing this guide, we recommend reviewing the Changelog to check for
 specific notes about less-commonly-used features. This guide is also not
 intended as an overview of the new features in Terraform v0.14. This release
@@ -305,7 +305,7 @@ output from Terraform v0.13, you can temporarily re-enable it by setting the
 environment variable `TF_X_CONCISE_DIFF=0` when you run Terraform.
 
 If you choose to opt out of the new concise mode, please
-[open a feature request issue](https://github.com/hashicorp/terraform/issues/new?labels=enhancement%2C+new&template=feature_request.md)
+[open a feature request issue](https://github.com/jameswoolfenden/terraform/issues/new?labels=enhancement%2C+new&template=feature_request.md)
 to let us know what you found lacking in the new output. We intend to continue
 iterating on the design tradeoffs here to find the best compromise to suit
 the needs of most users. We expect to remove the opt-out environment variable

@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/terraform/states/statemgr"
+	"github.com/jameswoolfenden/terraform/states/statemgr"
 
-	"github.com/hashicorp/terraform/terraform"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/terraform"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 	"github.com/mitchellh/cli"
 )
 

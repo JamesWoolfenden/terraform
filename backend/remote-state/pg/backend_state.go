@@ -3,10 +3,10 @@ package pg
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform/backend"
-	"github.com/hashicorp/terraform/states"
-	"github.com/hashicorp/terraform/states/remote"
-	"github.com/hashicorp/terraform/states/statemgr"
+	"github.com/jameswoolfenden/terraform/backend"
+	"github.com/jameswoolfenden/terraform/states"
+	"github.com/jameswoolfenden/terraform/states/remote"
+	"github.com/jameswoolfenden/terraform/states/statemgr"
 )
 
 func (b *Backend) Workspaces() ([]string, error) {

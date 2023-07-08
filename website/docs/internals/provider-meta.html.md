@@ -32,7 +32,7 @@ functionality.
 
 ~> **Experimental Feature!** This functionality is still considered
 experimental, and anyone taking advantage of it should [coordinate
-with the Terraform team](https://github.com/hashicorp/terraform/issues/new)
+with the Terraform team](https://github.com/jameswoolfenden/terraform/issues/new)
 to help the team understand how the feature is being used and to make
 sure their use case is taken into account as the feature develops.
 

@@ -3,10 +3,10 @@ package terraform
 import (
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/configs/configschema"
-	"github.com/hashicorp/terraform/providers"
-	"github.com/hashicorp/terraform/provisioners"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/configs/configschema"
+	"github.com/jameswoolfenden/terraform/providers"
+	"github.com/jameswoolfenden/terraform/provisioners"
 )
 
 // simpleMockComponentFactory returns a component factory pre-configured with
@@ -46,11 +46,11 @@ func simpleMockComponentFactory() *basicComponentFactory {
 //
 // The returned schema contains the following optional attributes:
 //
-//     test_string, of type string
-//     test_number, of type number
-//     test_bool, of type bool
-//     test_list, of type list(string)
-//     test_map, of type map(string)
+//	test_string, of type string
+//	test_number, of type number
+//	test_bool, of type bool
+//	test_list, of type list(string)
+//	test_map, of type map(string)
 //
 // Each call to this function produces an entirely new schema instance, so
 // callers can feel free to modify it once returned.

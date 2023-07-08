@@ -1,10 +1,10 @@
 package main
 
 import (
-	localexec "github.com/hashicorp/terraform/builtin/provisioners/local-exec"
-	"github.com/hashicorp/terraform/internal/grpcwrap"
-	"github.com/hashicorp/terraform/internal/tfplugin5"
-	"github.com/hashicorp/terraform/plugin"
+	localexec "github.com/jameswoolfenden/terraform/builtin/provisioners/local-exec"
+	"github.com/jameswoolfenden/terraform/internal/grpcwrap"
+	"github.com/jameswoolfenden/terraform/internal/tfplugin5"
+	"github.com/jameswoolfenden/terraform/plugin"
 )
 
 func main() {

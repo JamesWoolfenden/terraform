@@ -8,9 +8,9 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/configs"
-	"github.com/hashicorp/terraform/terraform"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/configs"
+	"github.com/jameswoolfenden/terraform/terraform"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 func TestParseVariableValuesUndeclared(t *testing.T) {

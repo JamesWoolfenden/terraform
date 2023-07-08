@@ -7,11 +7,11 @@ import (
 
 	"github.com/hashicorp/hcl/v2"
 
-	"github.com/hashicorp/terraform/backend"
-	statespkg "github.com/hashicorp/terraform/states"
-	"github.com/hashicorp/terraform/states/remote"
+	"github.com/jameswoolfenden/terraform/backend"
+	statespkg "github.com/jameswoolfenden/terraform/states"
+	"github.com/jameswoolfenden/terraform/states/remote"
 
-	_ "github.com/hashicorp/terraform/internal/logging"
+	_ "github.com/jameswoolfenden/terraform/internal/logging"
 )
 
 func TestMain(m *testing.M) {

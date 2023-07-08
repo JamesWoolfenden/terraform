@@ -8,7 +8,7 @@ import (
 
 	"github.com/hashicorp/hcl/v2"
 	svchost "github.com/hashicorp/terraform-svchost"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 // Provider encapsulates a single provider type. In the future this will be
@@ -227,9 +227,10 @@ func (pt Provider) Equals(other Provider) bool {
 // terraform-config-inspect.
 //
 // The following are valid source string formats:
-// 		name
-// 		namespace/name
-// 		hostname/namespace/name
+//
+//	name
+//	namespace/name
+//	hostname/namespace/name
 func ParseProviderSourceString(str string) (Provider, tfdiags.Diagnostics) {
 	var ret Provider
 	var diags tfdiags.Diagnostics

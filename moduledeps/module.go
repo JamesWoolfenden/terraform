@@ -4,7 +4,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hashicorp/terraform/plugin/discovery"
+	"github.com/jameswoolfenden/terraform/plugin/discovery"
 )
 
 // Module represents the dependencies of a single module, as well being

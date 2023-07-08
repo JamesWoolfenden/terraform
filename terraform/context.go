@@ -8,20 +8,20 @@ import (
 	"sync"
 
 	"github.com/apparentlymart/go-versions/versions"
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/configs"
-	"github.com/hashicorp/terraform/instances"
-	"github.com/hashicorp/terraform/lang"
-	"github.com/hashicorp/terraform/plans"
-	"github.com/hashicorp/terraform/providers"
-	"github.com/hashicorp/terraform/provisioners"
-	"github.com/hashicorp/terraform/states"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/configs"
+	"github.com/jameswoolfenden/terraform/instances"
+	"github.com/jameswoolfenden/terraform/lang"
+	"github.com/jameswoolfenden/terraform/plans"
+	"github.com/jameswoolfenden/terraform/providers"
+	"github.com/jameswoolfenden/terraform/provisioners"
+	"github.com/jameswoolfenden/terraform/states"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/internal/depsfile"
-	"github.com/hashicorp/terraform/internal/getproviders"
-	_ "github.com/hashicorp/terraform/internal/logging"
+	"github.com/jameswoolfenden/terraform/internal/depsfile"
+	"github.com/jameswoolfenden/terraform/internal/getproviders"
+	_ "github.com/jameswoolfenden/terraform/internal/logging"
 )
 
 // InputMode defines what sort of input will be asked for when Input
@@ -498,9 +498,10 @@ func (c *Context) Eval(path addrs.ModuleInstance) (*lang.Scope, tfdiags.Diagnost
 // Context.State, rather than rely on the return value.
 //
 // TODO: Apply and Refresh should either always return a state, or rely on the
-//       State() method. Currently the helper/resource testing framework relies
-//       on the absence of a returned state to determine if Destroy can be
-//       called, so that will need to be refactored before this can be changed.
+//
+//	State() method. Currently the helper/resource testing framework relies
+//	on the absence of a returned state to determine if Destroy can be
+//	called, so that will need to be refactored before this can be changed.
 func (c *Context) Apply() (*states.State, tfdiags.Diagnostics) {
 	defer c.acquireRun("apply")()
 

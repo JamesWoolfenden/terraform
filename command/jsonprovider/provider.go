@@ -3,7 +3,7 @@ package jsonprovider
 import (
 	"encoding/json"
 
-	"github.com/hashicorp/terraform/terraform"
+	"github.com/jameswoolfenden/terraform/terraform"
 )
 
 // FormatVersion represents the version of the json format and will be

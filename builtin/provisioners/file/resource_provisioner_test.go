@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform/provisioners"
+	"github.com/jameswoolfenden/terraform/provisioners"
 	"github.com/zclconf/go-cty/cty"
 )
 

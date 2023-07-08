@@ -3,8 +3,8 @@ package command
 import (
 	"os"
 
-	"github.com/hashicorp/terraform/internal/depsfile"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/internal/depsfile"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 // dependenclyLockFilename is the filename of the dependency lock file.

@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/terraform/backend"
-	remoteBackend "github.com/hashicorp/terraform/backend/remote"
-	"github.com/hashicorp/terraform/command/arguments"
-	"github.com/hashicorp/terraform/command/views"
-	"github.com/hashicorp/terraform/plans/planfile"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/backend"
+	remoteBackend "github.com/jameswoolfenden/terraform/backend/remote"
+	"github.com/jameswoolfenden/terraform/command/arguments"
+	"github.com/jameswoolfenden/terraform/command/views"
+	"github.com/jameswoolfenden/terraform/plans/planfile"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 // ApplyCommand is a Command implementation that applies a Terraform

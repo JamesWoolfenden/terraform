@@ -1,7 +1,7 @@
 package terraform
 
 import (
-	"github.com/hashicorp/terraform/dag"
+	"github.com/jameswoolfenden/terraform/dag"
 )
 
 // ValidateGraphBuilder creates the graph for the validate operation.

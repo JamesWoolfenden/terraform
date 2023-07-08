@@ -13,17 +13,17 @@ import (
 	"github.com/davecgh/go-spew/spew"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/configs"
-	"github.com/hashicorp/terraform/configs/configload"
-	"github.com/hashicorp/terraform/internal/initwd"
-	"github.com/hashicorp/terraform/plans"
-	"github.com/hashicorp/terraform/providers"
-	"github.com/hashicorp/terraform/provisioners"
-	"github.com/hashicorp/terraform/registry"
-	"github.com/hashicorp/terraform/states"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/configs"
+	"github.com/jameswoolfenden/terraform/configs/configload"
+	"github.com/jameswoolfenden/terraform/internal/initwd"
+	"github.com/jameswoolfenden/terraform/plans"
+	"github.com/jameswoolfenden/terraform/providers"
+	"github.com/jameswoolfenden/terraform/provisioners"
+	"github.com/jameswoolfenden/terraform/registry"
+	"github.com/jameswoolfenden/terraform/states"
 
-	_ "github.com/hashicorp/terraform/internal/logging"
+	_ "github.com/jameswoolfenden/terraform/internal/logging"
 )
 
 // This is the directory where our test fixtures are.

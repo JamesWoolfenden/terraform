@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/hashicorp/terraform/backend"
-	"github.com/hashicorp/terraform/command/jsonprovider"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/backend"
+	"github.com/jameswoolfenden/terraform/command/jsonprovider"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 // ProvidersCommand is a Command implementation that prints out information

@@ -3,7 +3,7 @@ package schema
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform/internal/legacy/terraform"
+	"github.com/jameswoolfenden/terraform/internal/legacy/terraform"
 )
 
 // TestResourceDataRaw creates a ResourceData from a raw configuration map.

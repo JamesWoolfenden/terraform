@@ -11,8 +11,8 @@ import (
 	"github.com/mitchellh/cli"
 	"github.com/mitchellh/colorstring"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/states"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/states"
 )
 
 var disabledColorize = &colorstring.Colorize{
@@ -1377,7 +1377,7 @@ func TestStateMv_fromBackendToLocal(t *testing.T) {
 
 // This test covers moving the only resource in a module to a new address in
 // that module, which triggers the maybePruneModule functionality. This caused
-// a panic report: https://github.com/hashicorp/terraform/issues/25520
+// a panic report: https://github.com/jameswoolfenden/terraform/issues/25520
 func TestStateMv_onlyResourceInModule(t *testing.T) {
 	state := states.BuildState(func(s *states.SyncState) {
 		s.SetResourceInstanceCurrent(

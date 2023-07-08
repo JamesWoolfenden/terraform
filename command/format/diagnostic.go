@@ -7,8 +7,8 @@ import (
 	"sort"
 	"strings"
 
-	viewsjson "github.com/hashicorp/terraform/command/views/json"
-	"github.com/hashicorp/terraform/tfdiags"
+	viewsjson "github.com/jameswoolfenden/terraform/command/views/json"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 
 	"github.com/mitchellh/colorstring"
 	wordwrap "github.com/mitchellh/go-wordwrap"

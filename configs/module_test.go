@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/addrs"
 )
 
 // TestNewModule_provider_fqns exercises module.gatherProviderLocalNames()
@@ -207,7 +207,7 @@ func TestModule_required_provider_overrides(t *testing.T) {
 // Resources without explicit provider configuration are assigned a provider
 // implied based on the resource type. For example, this resource:
 //
-//  resource foo_instance "test" { }
+//	resource foo_instance "test" { }
 //
 // is assigned a provider with type "foo".
 //

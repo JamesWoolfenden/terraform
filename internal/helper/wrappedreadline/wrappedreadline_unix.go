@@ -1,3 +1,4 @@
+//go:build darwin || dragonfly || freebsd || (linux && !appengine) || netbsd || openbsd
 // +build darwin dragonfly freebsd linux,!appengine netbsd openbsd
 
 package wrappedreadline
@@ -6,7 +7,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/hashicorp/terraform/internal/helper/wrappedstreams"
+	"github.com/jameswoolfenden/terraform/internal/helper/wrappedstreams"
 )
 
 // getWidth impl for Unix

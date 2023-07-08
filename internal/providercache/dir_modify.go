@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/hashicorp/terraform/internal/getproviders"
+	"github.com/jameswoolfenden/terraform/internal/getproviders"
 )
 
 // InstallPackage takes a metadata object describing a package available for

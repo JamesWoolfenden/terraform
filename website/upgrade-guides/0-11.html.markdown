@@ -15,7 +15,7 @@ that process.
 The goal of this guide is to cover the most common upgrade concerns and
 issues that would benefit from more explanation and background. The exhaustive
 list of changes will always be the
-[Terraform Changelog](https://github.com/hashicorp/terraform/blob/main/CHANGELOG.md).
+[Terraform Changelog](https://github.com/jameswoolfenden/terraform/blob/main/CHANGELOG.md).
 After reviewing this guide, we recommend reviewing the Changelog to check on
 specific notes about the resources and providers you use.
 
@@ -208,7 +208,7 @@ resource "aws_vpc" "example" {
 The above example is problematic because removing either `module.network-use1`
 or `module.network-usw2` from the root module will make the corresponding
 provider configuration no longer available, as described in
-[issue #15762](https://github.com/hashicorp/terraform/issues/15762), which
+[issue #15762](https://github.com/jameswoolfenden/terraform/issues/15762), which
 prevents Terraform from refreshing or destroying that module's `aws_vpc.example`
 resource.
 

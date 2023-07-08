@@ -7,8 +7,8 @@ import (
 	"github.com/hashicorp/hcl/v2/gohcl"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 // Provider represents a "provider" block in a module or file. A provider
@@ -126,8 +126,8 @@ func (p *Provider) moduleUniqueKey() string {
 // that can be successfully parsed as compact relative provider configuration
 // addresses:
 //
-//     aws
-//     aws.foo
+//	aws
+//	aws.foo
 //
 // This function will panic if given a relative traversal.
 //

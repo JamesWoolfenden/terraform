@@ -10,7 +10,7 @@ import (
 	"github.com/davecgh/go-spew/spew"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/configs"
+	"github.com/jameswoolfenden/terraform/configs"
 )
 
 func TestLoaderLoadConfig_okay(t *testing.T) {

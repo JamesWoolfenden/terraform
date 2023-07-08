@@ -47,23 +47,23 @@ Any PR that is significantly changing or even breaking user experience cross-pro
 It is generally advisable to leave PRs labelled as `core` for HC employees to review and merge.
 
 Examples include:
- - adding/changing/removing a CLI (sub)command or a [flag](https://github.com/hashicorp/terraform/pull/12939)
- - introduce a new feature like [Environments](https://github.com/hashicorp/terraform/pull/12182) or [Shadow Graph](https://github.com/hashicorp/terraform/pull/9334)
- - changing config (HCL) like [adding support for lists](https://github.com/hashicorp/terraform/pull/6322)
- - change of the [build process or test environment](https://github.com/hashicorp/terraform/pull/9355)
+ - adding/changing/removing a CLI (sub)command or a [flag](https://github.com/jameswoolfenden/terraform/pull/12939)
+ - introduce a new feature like [Environments](https://github.com/jameswoolfenden/terraform/pull/12182) or [Shadow Graph](https://github.com/jameswoolfenden/terraform/pull/9334)
+ - changing config (HCL) like [adding support for lists](https://github.com/jameswoolfenden/terraform/pull/6322)
+ - change of the [build process or test environment](https://github.com/jameswoolfenden/terraform/pull/9355)
 
 ## Breaking Changes
 
  - we always try to avoid breaking changes where possible and/or defer them to the nearest major release
-   - [state migration](https://github.com/hashicorp/terraform/blob/2fe5976aec290f4b53f07534f4cde13f6d877a3f/helper/schema/resource.go#L33-L56) may help you avoid breaking changes, see [example](https://github.com/hashicorp/terraform/blob/351c6bed79abbb40e461d3f7d49fe4cf20bced41/builtin/providers/aws/resource_aws_route53_record_migrate.go)
+   - [state migration](https://github.com/jameswoolfenden/terraform/blob/2fe5976aec290f4b53f07534f4cde13f6d877a3f/helper/schema/resource.go#L33-L56) may help you avoid breaking changes, see [example](https://github.com/jameswoolfenden/terraform/blob/351c6bed79abbb40e461d3f7d49fe4cf20bced41/builtin/providers/aws/resource_aws_route53_record_migrate.go)
    - either way BCs should be clearly documented in special section of the Changelog
  - Any BC must always receive at least one :+1: from HC employee prior to merge, two :+1:s are advisable
 
  ### Examples of Breaking Changes
 
-  - https://github.com/hashicorp/terraform/pull/12396
-  - https://github.com/hashicorp/terraform/pull/13872
-  - https://github.com/hashicorp/terraform/pull/13752
+  - https://github.com/jameswoolfenden/terraform/pull/12396
+  - https://github.com/jameswoolfenden/terraform/pull/13872
+  - https://github.com/jameswoolfenden/terraform/pull/13752
 
 ## Unsure?
 

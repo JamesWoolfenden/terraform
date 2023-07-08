@@ -7,10 +7,10 @@ import (
 	"strings"
 
 	etcdapi "github.com/coreos/etcd/client"
-	"github.com/hashicorp/terraform/backend"
-	"github.com/hashicorp/terraform/internal/legacy/helper/schema"
-	"github.com/hashicorp/terraform/states/remote"
-	"github.com/hashicorp/terraform/states/statemgr"
+	"github.com/jameswoolfenden/terraform/backend"
+	"github.com/jameswoolfenden/terraform/internal/legacy/helper/schema"
+	"github.com/jameswoolfenden/terraform/states/remote"
+	"github.com/jameswoolfenden/terraform/states/statemgr"
 )
 
 func New() backend.Backend {

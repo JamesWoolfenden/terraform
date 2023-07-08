@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/hashicorp/terraform/providers"
+	"github.com/jameswoolfenden/terraform/providers"
 )
 
 // Provider is an implementation of providers.Interface

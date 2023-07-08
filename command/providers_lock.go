@@ -6,11 +6,11 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/internal/depsfile"
-	"github.com/hashicorp/terraform/internal/getproviders"
-	"github.com/hashicorp/terraform/internal/providercache"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/internal/depsfile"
+	"github.com/jameswoolfenden/terraform/internal/getproviders"
+	"github.com/jameswoolfenden/terraform/internal/providercache"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 // ProvidersLockCommand is a Command implementation that implements the

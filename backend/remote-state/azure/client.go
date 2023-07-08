@@ -12,8 +12,8 @@ import (
 	"github.com/hashicorp/go-uuid"
 	"github.com/tombuildsstuff/giovanni/storage/2018-11-09/blob/blobs"
 
-	"github.com/hashicorp/terraform/states/remote"
-	"github.com/hashicorp/terraform/states/statemgr"
+	"github.com/jameswoolfenden/terraform/states/remote"
+	"github.com/jameswoolfenden/terraform/states/statemgr"
 )
 
 const (

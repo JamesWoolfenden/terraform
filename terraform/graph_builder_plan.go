@@ -3,11 +3,11 @@ package terraform
 import (
 	"sync"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/configs"
-	"github.com/hashicorp/terraform/dag"
-	"github.com/hashicorp/terraform/states"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/configs"
+	"github.com/jameswoolfenden/terraform/dag"
+	"github.com/jameswoolfenden/terraform/states"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 // PlanGraphBuilder implements GraphBuilder and is responsible for building
@@ -15,12 +15,11 @@ import (
 //
 // The primary difference between this graph and others:
 //
-//   * Based on the config since it represents the target state
+//   - Based on the config since it represents the target state
 //
-//   * Ignores lifecycle options since no lifecycle events occur here. This
+//   - Ignores lifecycle options since no lifecycle events occur here. This
 //     simplifies the graph significantly since complex transforms such as
 //     create-before-destroy can be completely ignored.
-//
 type PlanGraphBuilder struct {
 	// Config is the configuration tree to build a plan from.
 	Config *configs.Config

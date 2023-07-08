@@ -24,9 +24,9 @@ import (
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
 	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore"
 	"github.com/hashicorp/go-cleanhttp"
-	"github.com/hashicorp/terraform/backend"
-	"github.com/hashicorp/terraform/internal/legacy/helper/schema"
-	"github.com/hashicorp/terraform/version"
+	"github.com/jameswoolfenden/terraform/backend"
+	"github.com/jameswoolfenden/terraform/internal/legacy/helper/schema"
+	"github.com/jameswoolfenden/terraform/version"
 	"github.com/jmespath/go-jmespath"
 	"github.com/mitchellh/go-homedir"
 )

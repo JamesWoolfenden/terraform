@@ -3,10 +3,10 @@ package terraform
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/configs"
-	"github.com/hashicorp/terraform/instances"
-	"github.com/hashicorp/terraform/states"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/configs"
+	"github.com/jameswoolfenden/terraform/instances"
+	"github.com/jameswoolfenden/terraform/states"
 )
 
 func TestNodePlannableResourceExecute(t *testing.T) {

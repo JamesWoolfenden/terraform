@@ -15,14 +15,14 @@ import (
 
 	getter "github.com/hashicorp/go-getter"
 	"github.com/hashicorp/terraform-svchost/disco"
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/httpclient"
-	"github.com/hashicorp/terraform/internal/depsfile"
-	"github.com/hashicorp/terraform/internal/getproviders"
-	"github.com/hashicorp/terraform/internal/providercache"
-	discovery "github.com/hashicorp/terraform/plugin/discovery"
-	"github.com/hashicorp/terraform/tfdiags"
-	"github.com/hashicorp/terraform/version"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/httpclient"
+	"github.com/jameswoolfenden/terraform/internal/depsfile"
+	"github.com/jameswoolfenden/terraform/internal/getproviders"
+	"github.com/jameswoolfenden/terraform/internal/providercache"
+	discovery "github.com/jameswoolfenden/terraform/plugin/discovery"
+	"github.com/jameswoolfenden/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/version"
 	"github.com/mitchellh/cli"
 )
 

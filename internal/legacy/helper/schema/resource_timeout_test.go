@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/terraform/internal/legacy/terraform"
+	"github.com/jameswoolfenden/terraform/internal/legacy/terraform"
 )
 
 func TestResourceTimeout_ConfigDecode_badkey(t *testing.T) {

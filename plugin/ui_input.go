@@ -5,7 +5,7 @@ import (
 	"net/rpc"
 
 	"github.com/hashicorp/go-plugin"
-	"github.com/hashicorp/terraform/terraform"
+	"github.com/jameswoolfenden/terraform/terraform"
 )
 
 // UIInput is an implementation of terraform.UIInput that communicates

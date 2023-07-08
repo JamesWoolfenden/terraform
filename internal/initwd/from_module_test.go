@@ -9,11 +9,11 @@ import (
 	"testing"
 
 	version "github.com/hashicorp/go-version"
-	"github.com/hashicorp/terraform/configs"
-	"github.com/hashicorp/terraform/configs/configload"
-	"github.com/hashicorp/terraform/internal/copy"
-	"github.com/hashicorp/terraform/registry"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/configs"
+	"github.com/jameswoolfenden/terraform/configs/configload"
+	"github.com/jameswoolfenden/terraform/internal/copy"
+	"github.com/jameswoolfenden/terraform/registry"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 func TestDirFromModule_registry(t *testing.T) {
@@ -126,7 +126,7 @@ func TestDirFromModule_submodules(t *testing.T) {
 	// the same for our "wantCalls" comparison values. Otherwise this test
 	// will fail when building in a source tree with symlinks in $PWD.
 	//
-	// See also: https://github.com/hashicorp/terraform/issues/26014
+	// See also: https://github.com/jameswoolfenden/terraform/issues/26014
 	//
 	fromModuleDirRealpath, err := filepath.EvalSymlinks(fromModuleDir)
 	if err != nil {
@@ -196,7 +196,7 @@ func TestDirFromModule_submodules(t *testing.T) {
 
 // TestDirFromModule_rel_submodules is similar to the test above, but the
 // from-module is relative to the install dir ("../"):
-// https://github.com/hashicorp/terraform/issues/23010
+// https://github.com/jameswoolfenden/terraform/issues/23010
 func TestDirFromModule_rel_submodules(t *testing.T) {
 	// This test creates a tmpdir with the following directory structure:
 	// - tmpdir/local-modules (with contents of testdata/local-modules)

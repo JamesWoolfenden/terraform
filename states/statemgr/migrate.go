@@ -3,7 +3,7 @@ package statemgr
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform/states/statefile"
+	"github.com/jameswoolfenden/terraform/states/statefile"
 )
 
 // Migrator is an optional interface implemented by state managers that

@@ -4,9 +4,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/addrs"
 
-	"github.com/hashicorp/terraform/dag"
+	"github.com/jameswoolfenden/terraform/dag"
 )
 
 func TestBasicGraphBuilder_impl(t *testing.T) {

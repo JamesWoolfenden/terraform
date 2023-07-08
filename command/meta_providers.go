@@ -11,16 +11,16 @@ import (
 	"github.com/hashicorp/go-multierror"
 	plugin "github.com/hashicorp/go-plugin"
 
-	"github.com/hashicorp/terraform/addrs"
-	terraformProvider "github.com/hashicorp/terraform/builtin/providers/terraform"
-	"github.com/hashicorp/terraform/internal/getproviders"
-	"github.com/hashicorp/terraform/internal/logging"
-	"github.com/hashicorp/terraform/internal/moduletest"
-	"github.com/hashicorp/terraform/internal/providercache"
-	tfplugin "github.com/hashicorp/terraform/plugin"
-	tfplugin6 "github.com/hashicorp/terraform/plugin6"
-	"github.com/hashicorp/terraform/providers"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/addrs"
+	terraformProvider "github.com/jameswoolfenden/terraform/builtin/providers/terraform"
+	"github.com/jameswoolfenden/terraform/internal/getproviders"
+	"github.com/jameswoolfenden/terraform/internal/logging"
+	"github.com/jameswoolfenden/terraform/internal/moduletest"
+	"github.com/jameswoolfenden/terraform/internal/providercache"
+	tfplugin "github.com/jameswoolfenden/terraform/plugin"
+	tfplugin6 "github.com/jameswoolfenden/terraform/plugin6"
+	"github.com/jameswoolfenden/terraform/providers"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 // The TF_DISABLE_PLUGIN_TLS environment variable is intended only for use by

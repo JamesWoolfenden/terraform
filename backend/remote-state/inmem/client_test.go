@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/terraform/backend"
-	"github.com/hashicorp/terraform/states/remote"
+	"github.com/jameswoolfenden/terraform/backend"
+	"github.com/jameswoolfenden/terraform/states/remote"
 )
 
 func TestRemoteClient_impl(t *testing.T) {

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hashicorp/terraform/communicator/shared"
+	"github.com/jameswoolfenden/terraform/communicator/shared"
 	"github.com/zclconf/go-cty/cty"
 )
 

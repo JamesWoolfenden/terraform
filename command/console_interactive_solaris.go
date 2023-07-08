@@ -1,3 +1,4 @@
+//go:build solaris
 // +build solaris
 
 package command
@@ -5,7 +6,7 @@ package command
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform/repl"
+	"github.com/jameswoolfenden/terraform/repl"
 	"github.com/mitchellh/cli"
 )
 

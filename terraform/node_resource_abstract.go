@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/configs"
-	"github.com/hashicorp/terraform/configs/configschema"
-	"github.com/hashicorp/terraform/dag"
-	"github.com/hashicorp/terraform/lang"
-	"github.com/hashicorp/terraform/states"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/configs"
+	"github.com/jameswoolfenden/terraform/configs/configschema"
+	"github.com/jameswoolfenden/terraform/dag"
+	"github.com/jameswoolfenden/terraform/lang"
+	"github.com/jameswoolfenden/terraform/states"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 // ConcreteResourceNodeFunc is a callback type used to convert an
@@ -444,13 +444,13 @@ func (n *NodeAbstractResource) readResourceInstanceStateDeposed(ctx EvalContext,
 // graphNodesAreResourceInstancesInDifferentInstancesOfSameModule is an
 // annoyingly-task-specific helper function that returns true if and only if
 // the following conditions hold:
-// - Both of the given vertices represent specific resource instances, as
-//   opposed to unexpanded resources or any other non-resource-related object.
-// - The module instance addresses for both of the resource instances belong
-//   to the same static module.
-// - The module instance addresses for both of the resource instances are
-//   not equal, indicating that they belong to different instances of the
-//   same module.
+//   - Both of the given vertices represent specific resource instances, as
+//     opposed to unexpanded resources or any other non-resource-related object.
+//   - The module instance addresses for both of the resource instances belong
+//     to the same static module.
+//   - The module instance addresses for both of the resource instances are
+//     not equal, indicating that they belong to different instances of the
+//     same module.
 //
 // This result can be used as a way to compensate for the effects of
 // conservative analyses passes in our graph builders which make their

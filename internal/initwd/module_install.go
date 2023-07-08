@@ -9,13 +9,13 @@ import (
 
 	version "github.com/hashicorp/go-version"
 	"github.com/hashicorp/terraform-config-inspect/tfconfig"
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/internal/earlyconfig"
-	"github.com/hashicorp/terraform/internal/modsdir"
-	"github.com/hashicorp/terraform/registry"
-	"github.com/hashicorp/terraform/registry/regsrc"
-	"github.com/hashicorp/terraform/registry/response"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/internal/earlyconfig"
+	"github.com/jameswoolfenden/terraform/internal/modsdir"
+	"github.com/jameswoolfenden/terraform/registry"
+	"github.com/jameswoolfenden/terraform/registry/regsrc"
+	"github.com/jameswoolfenden/terraform/registry/response"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 type ModuleInstaller struct {

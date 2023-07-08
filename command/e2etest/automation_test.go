@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform/e2e"
-	"github.com/hashicorp/terraform/plans"
+	"github.com/jameswoolfenden/terraform/e2e"
+	"github.com/jameswoolfenden/terraform/plans"
 )
 
 // The tests in this file run through different scenarios recommended in our

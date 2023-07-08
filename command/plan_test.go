@@ -14,13 +14,13 @@ import (
 	"github.com/davecgh/go-spew/spew"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/addrs"
-	backendinit "github.com/hashicorp/terraform/backend/init"
-	"github.com/hashicorp/terraform/configs/configschema"
-	"github.com/hashicorp/terraform/plans"
-	"github.com/hashicorp/terraform/providers"
-	"github.com/hashicorp/terraform/states"
-	"github.com/hashicorp/terraform/terraform"
+	"github.com/jameswoolfenden/terraform/addrs"
+	backendinit "github.com/jameswoolfenden/terraform/backend/init"
+	"github.com/jameswoolfenden/terraform/configs/configschema"
+	"github.com/jameswoolfenden/terraform/plans"
+	"github.com/jameswoolfenden/terraform/providers"
+	"github.com/jameswoolfenden/terraform/states"
+	"github.com/jameswoolfenden/terraform/terraform"
 )
 
 func TestPlan(t *testing.T) {
@@ -598,7 +598,7 @@ func TestPlan_varsUnset(t *testing.T) {
 	// default value and there are no -var arguments on our command line.
 
 	// This will (helpfully) panic if more than one variable is requested during plan:
-	// https://github.com/hashicorp/terraform/issues/26027
+	// https://github.com/jameswoolfenden/terraform/issues/26027
 	close := testInteractiveInput(t, []string{"bar"})
 	defer close()
 
@@ -621,7 +621,7 @@ func TestPlan_varsUnset(t *testing.T) {
 
 // This test adds a required argument to the test provider to validate
 // processing of user input:
-// https://github.com/hashicorp/terraform/issues/26035
+// https://github.com/jameswoolfenden/terraform/issues/26035
 func TestPlan_providerArgumentUnset(t *testing.T) {
 	// Create a temporary working directory that is empty
 	td := tempDir(t)

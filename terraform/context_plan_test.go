@@ -15,14 +15,14 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/addrs"
-	"github.com/hashicorp/terraform/configs/configschema"
-	"github.com/hashicorp/terraform/configs/hcl2shim"
-	"github.com/hashicorp/terraform/plans"
-	"github.com/hashicorp/terraform/providers"
-	"github.com/hashicorp/terraform/provisioners"
-	"github.com/hashicorp/terraform/states"
-	"github.com/hashicorp/terraform/tfdiags"
+	"github.com/jameswoolfenden/terraform/addrs"
+	"github.com/jameswoolfenden/terraform/configs/configschema"
+	"github.com/jameswoolfenden/terraform/configs/hcl2shim"
+	"github.com/jameswoolfenden/terraform/plans"
+	"github.com/jameswoolfenden/terraform/providers"
+	"github.com/jameswoolfenden/terraform/provisioners"
+	"github.com/jameswoolfenden/terraform/states"
+	"github.com/jameswoolfenden/terraform/tfdiags"
 )
 
 func TestContext2Plan_basic(t *testing.T) {
@@ -884,7 +884,7 @@ module.child:
 	}
 }
 
-// https://github.com/hashicorp/terraform/issues/3114
+// https://github.com/jameswoolfenden/terraform/issues/3114
 func TestContext2Plan_moduleOrphansWithProvisioner(t *testing.T) {
 	m := testModule(t, "plan-modules-remove-provisioners")
 	p := testProvider("aws")
@@ -2992,7 +2992,7 @@ func TestContext2Plan_countIncreaseFromOneCorrupted(t *testing.T) {
 // A common pattern in TF configs is to have a set of resources with the same
 // count and to use count.index to create correspondences between them:
 //
-//    foo_id = "${foo.bar.*.id[count.index]}"
+//	foo_id = "${foo.bar.*.id[count.index]}"
 //
 // This test is for the situation where some instances already exist and the
 // count is increased. In that case, we should see only the create diffs
@@ -4301,7 +4301,7 @@ func TestContext2Plan_targetedOrphan(t *testing.T) {
 	}
 }
 
-// https://github.com/hashicorp/terraform/issues/2538
+// https://github.com/jameswoolfenden/terraform/issues/2538
 func TestContext2Plan_targetedModuleOrphan(t *testing.T) {
 	m := testModule(t, "plan-targeted-module-orphan")
 	p := testProvider("aws")
@@ -4452,7 +4452,7 @@ func TestContext2Plan_outputContainsTargetedResource(t *testing.T) {
 	}
 }
 
-// https://github.com/hashicorp/terraform/issues/4515
+// https://github.com/jameswoolfenden/terraform/issues/4515
 func TestContext2Plan_targetedOverTen(t *testing.T) {
 	m := testModule(t, "plan-targeted-over-ten")
 	p := testProvider("aws")

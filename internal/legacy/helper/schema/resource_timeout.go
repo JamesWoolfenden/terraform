@@ -5,8 +5,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/hashicorp/terraform/configs/hcl2shim"
-	"github.com/hashicorp/terraform/internal/legacy/terraform"
+	"github.com/jameswoolfenden/terraform/configs/hcl2shim"
+	"github.com/jameswoolfenden/terraform/internal/legacy/terraform"
 	"github.com/mitchellh/copystructure"
 )
 
@@ -153,7 +153,6 @@ func unsupportedTimeoutKeyError(key string) error {
 //
 // StateEncode encodes the timeout into the ResourceData's InstanceState for
 // saving to state
-//
 func (t *ResourceTimeout) DiffEncode(id *terraform.InstanceDiff) error {
 	return t.metaEncode(id)
 }
