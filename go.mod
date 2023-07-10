@@ -136,7 +136,7 @@ require (
 	k8s.io/api v0.0.0-20190620084959-7cf5895f2711
 	k8s.io/apimachinery v0.0.0-20190913080033-27d36303b655
 	k8s.io/client-go v10.0.0+incompatible
-	k8s.io/utils v0.0.0-20200411171748-3d5a2fe318e4
+	k8s.io/utils v0.0.0-20230505201702-9f6742963106
 )
 
 replace google.golang.org/grpc v1.31.1 => google.golang.org/grpc v1.27.1
