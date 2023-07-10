@@ -26,7 +26,7 @@ require (
 	github.com/bmatcuk/doublestar v1.1.5
 	github.com/boltdb/bolt v1.3.1 // indirect
 	github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e
-	github.com/coreos/bbolt v1.3.0 // indirect
+	github.com/coreos/bbolt v1.3.7 // indirect
 	github.com/coreos/etcd v3.3.10+incompatible
 	github.com/coreos/go-semver v0.2.0 // indirect
 	github.com/coreos/go-systemd v0.0.0-20181012123002-c6f51f82210d // indirect
@@ -125,7 +125,7 @@ require (
 	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4
 	golang.org/x/net v0.6.0
 	golang.org/x/oauth2 v0.0.0-20200902213428-5d25da1a8d43
-	golang.org/x/sys v0.5.0
+	golang.org/x/sys v0.10.0
 	golang.org/x/term v0.5.0
 	golang.org/x/text v0.7.0
 	golang.org/x/tools v0.1.12
@@ -142,5 +142,7 @@ require (
 replace google.golang.org/grpc v1.31.1 => google.golang.org/grpc v1.27.1
 
 replace k8s.io/client-go => k8s.io/client-go v0.0.0-20190620085101-78d2af792bab
+
+replace github.com/coreos/bbolt v1.3.7 => go.etcd.io/bbolt v1.3.7
 
 go 1.14
